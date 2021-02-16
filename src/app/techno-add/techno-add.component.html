@@ -1,4 +1,4 @@
-<h3>Ajouter une techno à la liste</h3>
+<h3>Ajouter une techno à la liste des technos<h3>
 <form #f="ngForm" (submit)="addTechno(f)">
     <div class="form-group">
         <label for="technoname">Nom de la techno</label>
@@ -15,7 +15,7 @@
            <textarea name="details" id="details" ngModel name="details" cols="100" rows="10">Détails / Remarques & Objectifs...</textarea>
     </div>
     <div class="form-group">
-        <button type="submit">Ajouter</button>
+        <button type="submit" id="submit">Ajouter</button>
     </div>
 
 </form>

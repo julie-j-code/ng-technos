@@ -14,7 +14,8 @@ export class TechnoAddComponent implements OnInit {
   }
 
   addTechno(form:any){
-    this.ts.createTechno(form.value);    
+    this.ts.createTechno(form.value); 
+    form.reset();   
   }
 
 }

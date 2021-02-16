@@ -24,4 +24,10 @@ export class TechnosService {
   return this.technos;
   }
 
+  // deleteTechno(tech: Technology) {
+  deleteTechno(tech: any) {
+    this.technos = this.technos.filter(t => t.id !== tech.id);
+    return this.technos;
+  }
+
 }

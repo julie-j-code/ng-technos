@@ -20,4 +20,10 @@ export class TechnoListComponent implements OnInit {
     this.allTechnos=this.ts.getTechnos();
   }
 
+  deleteTechno(techno:any){
+  // deleteTechno(techno:Technologys){
+    this.allTechnos=this.ts.deleteTechno(techno);
+    this.allTechnos=this.ts.getTechnos();
+  }
+
 }
