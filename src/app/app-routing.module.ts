@@ -4,8 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { TechnoAddComponent } from './techno-add/techno-add.component';
 
 const routes: Routes = [
-  { path: "/", component: HomeComponent },
-  { path: "/add-techno", component: TechnoAddComponent }
+  { path: "", component: HomeComponent },
+  { path: "add-techno", component: TechnoAddComponent }
 ];
 
 @NgModule({

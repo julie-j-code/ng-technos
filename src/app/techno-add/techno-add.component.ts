@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TechnosService } from '../services/technos.service';
 
 @Component({
   selector: 'app-techno-add',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechnoAddComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ts:TechnosService) { }
 
   ngOnInit(): void {
+  }
+
+  addTechno(form:any){
+    this.ts.createTechno(form.value)
+    
   }
 
 }

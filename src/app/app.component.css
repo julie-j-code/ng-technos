@@ -1,0 +1,52 @@
+:host {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+    margin: 1% auto;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.navbar-item {
+    flex-flow: column wrap;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: darkblue;
+    margin: 2%;
+    padding: 1%;
+}
+
+.content {
+    display: flex;
+    margin: 200px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+}
