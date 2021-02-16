@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Technology } from '../models/technologys';
 import { TechnosService } from '../services/technos.service';
 
 @Component({
@@ -9,8 +10,6 @@ import { TechnosService } from '../services/technos.service';
 export class TechnoListComponent implements OnInit {
 
   allTechnos : any[] = [];
-
-
   constructor(private ts: TechnosService) { }
 
   ngOnInit(): void {

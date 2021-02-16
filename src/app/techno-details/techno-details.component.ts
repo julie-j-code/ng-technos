@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { Technology } from '../models/technologys';
+import { Technology } from '../models/technologys';
+
 
 @Component({
   selector: 'app-techno-details',
@@ -7,9 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./techno-details.component.css']
 })
 export class TechnoDetailsComponent implements OnInit {
-  @Input() tech: any;
+  @Input() tech!:Technology;
 
-  constructor() { }
+  constructor() { 
+ 
+  }
 
   ngOnInit(): void {
   }
