@@ -7,7 +7,7 @@ import { Technology } from '../models/technologys';
   styleUrls: ['./techno-details.component.css']
 })
 export class TechnoDetailsComponent implements OnInit {
-  @Input() tech:Technology;
+  @Input() tech:any;
 
   constructor() { }
 
