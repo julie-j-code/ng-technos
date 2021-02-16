@@ -10,7 +10,14 @@ export class TechnosService {
   constructor() { }
 
   createTechno(techno:any) {
-    this.technos = [techno, ...this.technos];
+    const newTechno = {id:Date.now(), ...techno};
+    // this.technos = [techno, ...this.technos];
+    this.technos = [newTechno, ...this.technos];
+    console.log(this.technos)
+  }
+
+  getTechnos(){
+    return this.technos;
   }
 
 

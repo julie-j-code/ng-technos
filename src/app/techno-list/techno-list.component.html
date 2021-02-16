@@ -1,0 +1,8 @@
+<h3>Toutes les technos en veille</h3>
+<!-- {{allTechnos | json}} -->
+
+<div *ngFor="let techno of allTechnos">
+    <h4>{{ techno.technoname }}</h4>
+    <div>{{ techno.category }} - {{ techno.details }}</div>
+
+</div>
