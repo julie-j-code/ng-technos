@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Technology } from '../models/technologys';
+// import { Technology } from '../models/technologys';
 import { TechnosService } from '../services/technos.service';
 
 @Component({
