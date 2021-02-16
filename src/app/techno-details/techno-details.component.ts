@@ -12,6 +12,7 @@ export class TechnoDetailsComponent implements OnInit {
 
   constructor() { 
  
+    
   }
 
   ngOnInit(): void {
