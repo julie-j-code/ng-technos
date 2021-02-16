@@ -3,4 +3,5 @@ export interface Technology {
     technoname: String;
     category: String;
     details: String;
+    
   }
