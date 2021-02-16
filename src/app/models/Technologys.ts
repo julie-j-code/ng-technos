@@ -6,7 +6,7 @@
     
 //   }
 
-  export interface Technology {
+  export interface Technologys {
     id: Number | null;
     technoname: String;
     category: String;

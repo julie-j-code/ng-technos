@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Technology } from '../models/technologys';
+import { Technologys } from '../models/technologys';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { Technology } from '../models/technologys';
   styleUrls: ['./techno-details.component.css']
 })
 export class TechnoDetailsComponent implements OnInit {
-  @Input() tech!:Technology;
+  @Input() tech!:Technologys;
 
   constructor() { 
  
