@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Technologys } from '../models/technologys';
 // import { Technologys } from '../models/technologys';
 
 
