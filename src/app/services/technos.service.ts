@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Technologys } from '../models/technologys';
 // import { Technologys } from '../models/technologys';
 
 @Injectable({
@@ -7,25 +8,27 @@ import { Injectable } from '@angular/core';
 export class TechnosService {
 
   // technos : Technologys[] = []
-  technos : any[] = []
+  technos: any[] = [];
 
   constructor() { }
 
   // createTechno(techno:Technologys) {
-    createTechno(techno:any) {
-    const newTechno = {id:Date.now(), ...techno};
+    // tslint:disable-next-line: typedef
+    createTechno(techno: any) {
+    const newTechno = {id: Date.now(), ...techno};
     // this.technos = [techno, ...this.technos];
     this.technos = [newTechno, ...this.technos];
-    console.log(this.technos)
+    console.log(this.technos);
   }
 
   // getTechnos(): Technologys[]{
-  getTechnos(){  
+  getTechnos(): Technologys[]{
   return this.technos;
   }
 
   // deleteTechno(tech: Technology) {
-  deleteTechno(tech: any) {
+  // tslint:disable-next-line: typedef
+  deleteTechno(tech: Technologys){
     this.technos = this.technos.filter(t => t.id !== tech.id);
     return this.technos;
   }
